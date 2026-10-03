@@ -16,7 +16,6 @@ main{max-width:860px;margin:auto;padding:20px}
 section{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:24px;margin:20px 0}
 h2{color:var(--pri);margin-top:0;border-left:5px solid var(--acc);padding-left:12px}
 details{border:1px solid var(--bd);border-radius:8px;padding:10px 14px;margin:8px 0}summary{cursor:pointer;font-weight:bold}
-.video{position:relative;padding-top:56.25%;border-radius:10px;overflow:hidden;background:#000}.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .q button{display:block;width:100%;text-align:left;margin:6px 0;padding:10px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);cursor:pointer;font:inherit}
 .ok{background:#c9f0d3!important}.no{background:#f8cccc!important}
 .ref{padding-left:2em;text-indent:-2em;margin:10px 0}
@@ -30,7 +29,7 @@ svg text{fill:#fff;font:600 14px system-ui}
 <p>Técnica Profesional en Procesos Administrativos de Salud · UPTC – FESAD</p>
 <p>Autor/a: <strong>TU NOMBRE COMPLETO</strong> · TICs y Ambientes de Aprendizaje · 2026</p>
 </header>
-<nav><a href="#intro">Introducción</a><a href="#hce">¿Qué es la HCE?</a><a href="#video">Video</a><a href="#normas">Normatividad</a><a href="#quiz">Autoevaluación</a><a href="#concl">Conclusiones</a><a href="#refs">Referencias</a></nav>
+<nav><a href="#intro">Introducción</a><a href="#hce">¿Qué es la HCE?</a><a href="#normas">Normatividad</a><a href="#quiz">Autoevaluación</a><a href="#concl">Conclusiones</a><a href="#refs">Referencias</a></nav>
 <main>
 
 <section id="intro"><h2>Introducción</h2>
@@ -46,10 +45,6 @@ svg text{fill:#fff;font:600 14px system-ui}
 <rect x="550" y="40" width="140" height="70" rx="12" fill="#7a3fb5"/><text x="620" y="80" text-anchor="middle">4. Intercambio</text>
 <path d="M160 75h30M340 75h30M520 75h30" stroke="#888" stroke-width="3"/></svg>
 <p><strong>Ventajas:</strong> acceso rápido, menos pérdida de documentos, mejor trazabilidad y continuidad de la atención. <strong>Retos:</strong> seguridad informática, capacitación del personal y conectividad.</p></section>
-
-<section id="video"><h2>Recurso multimedia: video</h2>
-<div class="video" id="vbox"></div>
-<p style="color:var(--mut);font-size:.9rem">Video complementario sobre historia clínica electrónica y seguridad de la información en salud.</p></section>
 
 <section id="normas"><h2>Marco normativo en Colombia</h2>
 <details><summary>Resolución 1995 de 1999 – Historia clínica</summary><p>Define la historia clínica, sus características (integralidad, secuencialidad, racionalidad científica, disponibilidad y oportunidad), su custodia y reserva (Ministerio de Salud, 1999).</p></details>
@@ -74,11 +69,6 @@ svg text{fill:#fff;font:600 14px system-ui}
 </main>
 <footer>Blog académico · Actividad 7 · Unidad 4 · UPTC</footer>
 <script>
-// ===== CONFIGURACIÓN: pega aquí el ID de tu video de YouTube (lo que va después de v=) =====
-const VIDEO_ID = "";
-const vb=document.getElementById('vbox');
-if(VIDEO_ID){vb.innerHTML='<iframe src="https://www.youtube.com/embed/'+VIDEO_ID+'" allowfullscreen loading="lazy"></iframe>'}
-else{vb.style.cssText='padding:40px;color:#fff;text-align:center';vb.textContent='Aquí va tu video de YouTube (edita VIDEO_ID en index.html).'}
 // Quiz
 const Q=[["¿Quién puede conocer la historia clínica sin autorización del paciente?",["Cualquier empleado","Solo en los casos previstos por la ley","Los familiares de cualquier paciente"],1],
 ["Los datos de salud se consideran…",["Datos públicos","Datos semiprivados","Datos sensibles"],2],
